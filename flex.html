@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style>
+      div{
+        
+        background-image: url("https://image.freepik.com/free-photo/water-drops-windshield-traffic-city-rainy-day-colorful-bokeh_40643-20.jpg");
+        background-size: cover;
+        height:100%;
+
+      }
+      table{
+           display:inline;
+           
+           padding:20px;
+           text-align: justify;
+           
+           
+      }
+      #msg{
+        color: white;
+      }
+      th,td{
+        border: 2px solid grey;
+        background-color:lightgrey;
+        
+      }
+      button{
+        background-color: white;
+      }
+      #color{
+        background-color: olivedrab;
+        height: 30px;
+      }
+      td:hover{
+        opacity: 0.5;
+
+      }
+      #appear{
+        display:none;
+      }
+      #after{
+        display:none;
+      }
+      
+    </style>  
+  </head>
+  <body>
+   <div>
+    <h2 id="msg">Frontend Training</h2> 
+    <table>   
+      <thead>
+        <tr>
+              
+         <th>To Do</th> 
+        </tr>
+      </thead>
+      <tbody>
+        <tr>   
+         <td><button>Learn HTML</button></td>
+        </tr> 
+        <tr>
+         <td><button>Learn CSS</button></td>
+        </tr>
+        <tr>
+          <td><button>Learn JavaScript</button></td>
+        </tr>
+        <tr>
+          <td>+Add another card</td>
+        </tr> 
+      </tbody>      
+    </table>
+    
+    <table id="appear"> 
+      <thead>
+        <tr>
+           
+         <th>Doing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>  
+          <td><button>Prepare resume</button></td>
+        </tr>
+        <tr>            
+          <td><label for="type"></label>
+          <textarea id="type">Enter a title for this card...</textarea></td>
+        </tr>
+        <tr>
+          <td><button id="color">Add Card</button></td>
+        </tr> 
+        
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>   
+         <th>Testing/Verifying</th>
+        </tr>
+      </thead>
+      <tbody> 
+        <tr>   
+         <td><button>Twitter app frontend</button></td>
+        </tr>
+        <tr>
+         <td>+Add another card</td>
+        </tr>  
+        
+      </tbody>   
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+        
+          <th>Deploying</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>    
+          <td><button>Twitter app backend</button></td>
+        </tr>
+        <tr>  
+          <td>+Add another card</td>
+        </tr>  
+      
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+        
+          <th>Done</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>    
+          <td>+Add card</td>
+        </tr>  
+        
+      </tbody>     
+    </table>      
+
+
+    <table>
+      <thead>
+        <tr>
+        
+          <th>
+            +Add another list
+          </th>
+        </tr>  
+        
+      </thead>
+    </table>
+
+    <table id="after">
+      <thead>
+        <tr>
+          <td><label for="content"></label>
+          <textarea id="content">Enter list title..</textarea></td>
+    
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td> <button id="color">Add List</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+   </div>
+   <script>
+     setTimeout(function() {
+       document.getElementById('appear').style.display='inline';
+     },5000);
+   </script> 
+   <script>
+     setTimeout(function() {
+       document.getElementById('after').style.display='inline';
+     },9000);
+   </script>
+  </body>   
+</html>
+
+
+
+      
